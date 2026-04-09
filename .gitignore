@@ -1,12 +1,57 @@
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables (NEVER commit secrets)
 .env
+.env.local
+.env.*.local
+backend/.env
+backend/.env.local
+frontend/.env.local
 
-# Next.js build
+# Build outputs
 .next/
-
-# logs
-*.log
-
-# build outputs
 dist/
 build/
+.turbo/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.sublime-workspace
+*.sublime-project
+
+# Runtime & Testing
+uploads/
+coverage/
+.nyc_output/
+*.pem
+*.key
+
+# Development
+.env.development.local
+.env.production.local
+.env.test.local
